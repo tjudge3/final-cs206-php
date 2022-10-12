@@ -15,9 +15,7 @@ if (!isset($_SESSION['user_id'])) {
 
 }
 
-echo '<h4>Since there is no easy and quick method to add you as an admin, this page simply checks if the user is logged in,
-rather than specifically checking if they are an admin aka "$_SESSION[\'user_level\'] == 1". If you are logged in as a user, you can view this page.</h4>
-<h4>However, if you are not logged in, you will be redirected to the index page.</h4>
+echo '<h4>If someone is not logged in, they will be redirected to the index page.</h4>
 ';
 
 require(MYSQL);
